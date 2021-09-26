@@ -20,6 +20,40 @@ namespace Calculadora_Funcional
         //Listo 2 numeros para poder realizar una operacion matematica.
 
         //Operador segun seleccion.
-        public string operador { get; set; }
+        public string _operador { get; set; }
+
+
+
+
+        //Creacion de Metodos de Operaciones Matematicas.
+
+
+        //Metodo para Sumar.
+        public double Sumar(double numero_1, double numero_2)
+        {
+            double Suma = numero_1 + numero_2;
+            return Suma; 
+        }
+
+        //Metodo para Restar.
+        public double Restar(double numero_1, double numero_2)
+        {
+            double Resta = numero_1 - numero_2;
+            return Resta;
+        }
+
+        //Metodo para Multiplicar.
+        public double Multiplicar(double numero_1, double numero_2)
+        {
+            double Multiplicacion = numero_1 * numero_2;
+            return Multiplicacion;
+        }
+
+        //Metodo para Dividir.
+        public double Dividir(double numero_1, double numero_2)
+        {
+            double Division = numero_1 / numero_2;
+            return Division;
+        }
     }
 }
